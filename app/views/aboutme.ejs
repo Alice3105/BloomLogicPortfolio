@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+  <%- include ('partials/head.ejs')%>
+
+  <body>
+
+    <div id = "page-container">
+  
+      <div id = "content-wrap">
+
+        <main>
+
+        <div id ="header-container">
+
+          <div id = "title-container">
+            <%- include ('partials/header.ejs')%>
+
+            <%- include ('partials/logo.ejs')%>
+          </div>
+
+          <div id="nav-container">
+            <%- include ('partials/nav-bar.ejs')%>
+          </div>
+          
+        </div>
+
+        <div class ="nav-container-fluid">
+
+          <h2>
+            About Me
+          </h2>
+
+          <div id="buttons-container">
+            <div id="buttons-center">
+
+              <button class = "about-me-button" formaction="https://www.w3docs.com">
+                <a class="nav-link active" href ="https://www.linkedin.com/in/alice-huynh-136525b8/">LinkedIn Profile</a>
+              </button>
+  
+              <button class = "about-me-button">
+                <a class = "nav-link active" href = "https://drive.google.com/file/d/1_hkkPo1Si_RyTz9jTbvVzHwRBqKJd2ba/view?usp=sharing" >Resume</a>
+              </button>
+  
+              <button class = "about-me-button">
+                <a class = "nav-link active" href = "https://github.com/Alice3105" >GitHub</a>
+              </button>
+
+            </div>
+          </div>
+
+          <div class="clearfix">
+            
+            <img src="./img/about-me-image.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="A Image Image of An Asian Woman" style="border-radius: 5px;">
+            
+            <p>
+             As a committed Software Engineering student with a keen interest in Full Stack Development, 
+             Web Development, Cyber Security, and emerging technologies like Blockchain and Machine Learning, 
+             I am perpetually seeking opportunities to broaden my knowledge and capabilities. 
+             Proficient in popular programming languages such as C#, Python, and JavaScript, 
+             and familiar with frameworks like React and Express, I aim to develop seamless, 
+             user-centric solutions in the ever-evolving tech landscape. An avid Linux enthusiast, 
+             I am driven to explore its underlying systems and applications further.
+            </p>
+          
+            <p>
+              As I advance in my academic journey, I actively seek co-op and internship opportunities 
+              to bolster my hands-on experience and contribute to the success of cutting-edge projects.
+            </p>
+          
+            <p>
+              In my leisure time, I relish an array of hobbies, from board games, hiking, 
+              and nurturing my cherished cats and plants, to immersing myself in captivating 
+              video games. My most treasured pastime, however, is socializing, meeting new people, 
+              and spending quality time with friends!
+            </p>
+
+            <p>
+              This well-rounded approach exemplifies my dedication to ongoing learning and a 
+              readiness to embrace new challenges and potential career paths.
+            </p>
+              
+            <p>
+              Please don't hesitate to connect or reach out to discuss potential collaborations!
+            </p>
+
+          </div>
+        </div>
+  
+        </main>
+
+      </div>
+      
+      <%- include ('partials/footer.ejs')%>
+
+    </div>
+
+  </body>
+
+</html>
