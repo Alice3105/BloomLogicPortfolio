@@ -19,10 +19,7 @@
             <%- include ('partials/logo.ejs')%>
           </div>
 
-          <div id="nav-container">
             <%- include ('partials/nav-bar.ejs')%>
-          </div>
-          
         </div>
 
         <div class ="nav-container-fluid">
@@ -31,10 +28,9 @@
             About Me
           </h2>
 
-          <div id="buttons-container">
-            <div id="buttons-center">
+            <div id="buttons-container">
 
-              <button class = "about-me-button" formaction="https://www.w3docs.com">
+              <button class = "about-me-button">
                 <a class="nav-link active" href ="https://www.linkedin.com/in/alice-huynh-136525b8/">LinkedIn Profile</a>
               </button>
   
@@ -47,11 +43,11 @@
               </button>
 
             </div>
-          </div>
+          
 
           <div class="clearfix">
-            
-            <img src="./img/about-me-image.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="A Image Image of An Asian Woman" style="border-radius: 5px;">
+
+              <img id = "about-me-headshot" src="./img/about-me-image.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="A Image Image of An Asian Woman">
             
             <p>
              As a committed Software Engineering student with a keen interest in Full Stack Development, 

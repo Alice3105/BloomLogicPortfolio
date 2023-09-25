@@ -18,15 +18,94 @@
 
             <%- include ('partials/logo.ejs')%>
           </div>
-
-          <div id="nav-container">
+          
             <%- include ('partials/nav-bar.ejs')%>
-          </div>
           
         </div>
 
         <div class ="nav-container-fluid">
-          
+
+          <div id = "contact-info-container">
+            <h2>Contact Info</h2>
+              <div id="buttons-center-contact-page">
+
+                <button class = "contact-button" value="Mail US" onclick="window.location.href='mailto:alicehuynh3105@gmail.com'">
+                  <a class="nav-link active" href ="https://www.linkedin.com/in/alice-huynh-136525b8/">
+                    <div class = "icon-container">
+                      <img src = "./img/email-icon.png" alt = "Email Icon">
+                    </div>
+                  </a>
+                </button>
+    
+                <button class = "contact-button">
+                  <a class = "nav-link active" href = "https://drive.google.com/file/d/1_hkkPo1Si_RyTz9jTbvVzHwRBqKJd2ba/view?usp=sharing">
+                    <div class = "icon-container">
+                        <img src="./img/facebook-icon.png" alt="Facebook Icon">
+                    </div>
+                  </a>
+                </button>
+    
+                <button class = "contact-button">
+                  <a class = "nav-link active" href = "https://github.com/Alice3105">
+                    <div class = "icon-container">
+                      <img src = "./img/instagram-icon.png" alt = "">
+                    </div>
+                  </a>
+                </button>
+                
+          </div>
+
+          <div id="form">
+            <h2>Contact Form</h2>
+        
+            <form action="https://formsubmit.co/danny.dancer.cynic@gmail.com" method="POST">
+                
+                <input class = "contact-form-input" type="text" name="FName" id="FName" placeholder="First Name" required>
+
+                <br>
+                <br>
+
+                <input class = "contact-form-input" type="text" name="LName" id="LName" placeholder="Last Name" required>
+
+                <br>
+                <br>
+
+                <input class = "contact-form-input" type="tel" name="phones" id="phones" placeholder="Phone Numer"required>
+
+                <br>
+                <br>
+
+                <input class = "contact-form-input" type="email" name="email" id="email" placeholder="Email" required>
+
+                <br>
+                <br>
+
+                <label for="service">Type of Service: </label>
+                <br>
+                    <select name="service" id="select-service">
+                        <option value="custom-software-development">Custome Software Development</option>
+                        <option value="web-application-development">Web Application Development</option>
+                        <option value="mobile-app">Mobile App Development</option>
+                        <option value="cloud-service">Cloud Services</option>
+                        <option value="ecommercial-solutions">E-commerce Solution</option>
+                    </select>
+
+                <br>
+                <br>
+
+                <textarea type="text" name="comment" id="other" placeholder="Comment" rows="2" cols="30"></textarea>
+                
+                <br>
+                <br>
+
+                <input type="reset" value="Clear Form">
+                <input type="submit" value="Submit Form">
+
+                <br>
+                <br>
+
+            </form>
+        </div>
         </div>
   
         </main>
