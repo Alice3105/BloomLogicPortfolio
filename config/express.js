@@ -1,3 +1,9 @@
+/* 
+File name: express.js
+Student's name: Alice Huynh
+Student ID: 301341638
+Date: 2023-09-25*/
+
 //Import dependencies to use
 var express = require ('express'),
     morgan = require('morgan'),
